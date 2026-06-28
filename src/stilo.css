@@ -1,0 +1,83 @@
+/* Archivo: App.css */
+
+/* Fondo oscuro y tipografía limpia */
+.pantalla-login {
+  background-color: #121212;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+/* Espaciado del contenedor de los inputs */
+.formulario-contenedor {
+  margin-top: 50px;
+  width: 100%;
+  max-width: 360px; /* Limita el ancho para que se vea estético */
+}
+
+/* Estilos de cada grupo de Input (Label + Caja de texto) */
+.campo-grupo {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* Label arriba, input abajo para un look más moderno */
+  text-align: left;
+}
+
+.campo-grupo label {
+  color: #aaaaaa;
+  font-size: 14px;
+  margin-bottom: 6px;
+  text-transform: capitalize; /* Hace que la primera letra sea mayúscula automáticamente */
+}
+
+.campo-grupo input {
+  height: 40px;
+  padding: 0 15px;
+  background-color: #1e1e1e;
+  border: 1px solid #333333;
+  border-radius: 10px; /* Bordes redondeados elegantes */
+  color: white;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Efecto focus: Cuando el usuario le da clic al input para escribir */
+.campo-grupo input:focus {
+  border-color: #678362; /* Cambia al verde de tu cabecera */
+  box-shadow: 0 0 8px rgba(103, 131, 98, 0.3);
+}
+
+/* Botón de Registrar Minimalista */
+.btn-registrar {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 360px;
+  height: 45px;
+  background-color: #678362;
+  color: white;
+  border: none;
+  border-radius: 10px; /* Redondeado a juego con los inputs */
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-registrar:hover {
+  background-color: #556d51; /* Un verde un poco más oscuro al pasar el mouse */
+}
+
+/* Mensajes de Feedback de estado */
+.mensaje-alerta {
+  margin-top: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+}
