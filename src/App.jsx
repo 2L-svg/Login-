@@ -66,14 +66,14 @@ function App(){
     } 
 
     if (password.length < 6){
-      setMensaje("La contraseña tiene que tener más de 6 dígitos 🔒");
+      setMensaje("La contraseña tiene que tener más de 6 digitos");
       setTimeout(() => setMensaje(""), 3000);
       return;
     }
 
     const expresionCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!expresionCorreo.test(correo)) {
-      setMensaje("Por favor, ingresa un correo electrónico válido 📧");
+      setMensaje("Por favor, ingresa un correo electrónico valido ");
       setTimeout(() => setMensaje(""), 3000);
       return;
     }
@@ -103,7 +103,7 @@ function App(){
   const eliminarUsuario = (posicionBorrar) => {
     const listaNueva = listaUsuarios.filter((user, posicionActual) => posicionActual !== posicionBorrar);
     setlistaUsuarios(listaNueva);
-    setMensaje("Usuario eliminado correctamente ❌");
+    setMensaje("Usuario eliminado correctamente 🫠");
     setTimeout(() => setMensaje(""), 3000);
   }
 

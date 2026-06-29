@@ -50,11 +50,11 @@ function Formulario(props) {
         onClick={props.alEnviar} 
         className="btn-registrar"
         style={{
-          backgroundColor: props.enEdicion !== null ? '#2b6cb0' : '#280202',
+          backgroundColor: props.enEdicion !== null ? '#801f32' : '#02a3ae',
           transition: 'background-color 0.3s ease' 
         }}
       >
-        {props.enEdicion !== null ? "✏️ Guardar Cambios" : "➕ Registrar"}
+        {props.enEdicion !== null ? " Guardar Cambios" : " Registrar"}
       </button>
     </div>
   );
