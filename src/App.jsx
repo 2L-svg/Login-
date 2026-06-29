@@ -88,11 +88,11 @@ function App(){
       const listaModificada = [...listaUsuarios];
       listaModificada[enEdicion] = nuevoUsuario;
       setlistaUsuarios(listaModificada);
-      setMensaje("Datos editados correctamente ✏️");
+      setMensaje("Datos editados correctamente ");
       setEdicion(null);
     } else {
       setlistaUsuarios([...listaUsuarios, nuevoUsuario]);
-      setMensaje(`Bienvenido, ${usuario} 🎉`);
+      setMensaje(`Bienvenido, ${usuario} `);
     }
 
     setTimeout(() => setMensaje(""), 3000);
